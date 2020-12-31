@@ -1,6 +1,7 @@
 {
     "name": "xraffsarr/php-logger",
     "description": "A simple PHP logger",
+    "version": "1.0.0",
     "type": "library",
     "require": {
         "psr/log": "^1",
@@ -14,8 +15,10 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "0xRaffSarr",
-            "email": "contacts@raffaelesarracino.it"
+            "name": "Raffaele Sarracino",
+            "email": "contacts@raffaelesarracinno.it",
+            "homepage": "http://raffaelesarracino.it",
+            "role": "Developer"
         }
     ],
     "minimum-stability": "dev",
