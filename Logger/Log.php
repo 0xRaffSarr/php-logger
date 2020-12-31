@@ -5,8 +5,8 @@
  */
 
 namespace PhpLogger;
+
 use DateTime;
-use PhpLogger\LogContract;
 
 class Log implements LogContract
 {
@@ -27,6 +27,11 @@ class Log implements LogContract
      */
     protected $context;
 
+    /**
+     * The format string for DateTime object conversion
+     *
+     * @var string
+     */
     protected $dateTimeFormat  = 'd/m/Y H:i:s';
 
     /**
@@ -44,6 +49,65 @@ class Log implements LogContract
         $this->context = $context;
     }
 
+    /**
+     * Set the date and time of the log
+     *
+     * @param DateTime $time
+     */
+    public function setTime(DateTime $time) {
+        $this->time = $time;
+    }
+
+    /**
+     * Return a DateTime object with the date and time of the log
+     *
+     * @return DateTime
+     */
+    public function getTime() {
+        return $this->time;
+    }
+
+    /**
+     * Set the message data for log
+     *
+     * @param string $message
+     */
+    public function setMessage(string $message) {
+        $this->message = $message;
+    }
+
+    /**
+     * Return the log message
+     *
+     * @return string
+     */
+    public function getMessage() {
+        return $this->message;
+    }
+
+    /**
+     * Set the context of log
+     *
+     * @param array $context
+     */
+    public function setContext(array $context) {
+        $this->context = $context;
+    }
+
+    /**
+     * Return the log context
+     *
+     * @return array
+     */
+    public function getContext() {
+        return $this->context;
+    }
+
+    /**
+     * Return an array with the log data
+     *
+     * @return array
+     */
     public function toArray()
     {
         return [
