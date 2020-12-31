@@ -11,6 +11,7 @@ use Psr\Log\AbstractLogger;
 
 class Logger extends AbstractLogger
 {
+    private static $instance;
 
     private $logPath;
 
@@ -59,5 +60,18 @@ class Logger extends AbstractLogger
     public function log($level, $message, array $context = array())
     {
         // TODO: Implement log() method.
+    }
+
+    /**
+     * @param string|null $path
+     * @return static
+     * @throws \Exception
+     */
+    public static function instance(string $path = null) {
+        if(self::$instance || is_null($path)) {
+            return self::$instance;
+        }
+
+        return self::$instance = new static($path);
     }
 }
