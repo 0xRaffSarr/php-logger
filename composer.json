@@ -3,7 +3,8 @@
     "description": "A simple PHP logger",
     "type": "library",
     "require": {
-        "psr/log": "^1"
+        "psr/log": "^1",
+        "ext-json": "*"
     },
     "autoload": {
         "psr-4": {
