@@ -72,11 +72,13 @@ class Log implements LogContract
      * @return string
      */
     public function toString() {
-        $str = $this->time->format($this->dateTimeFormat).' '.$this->level.' '.$this->message;
+        $str = $this->time->format($this->dateTimeFormat).' '.$this->level.' '.$this->message.' [';
 
         foreach ($this->context as $val) {
             $str .= ' '.$val;
         }
+
+        $str .= ' ]';
 
         return $str;
     }
