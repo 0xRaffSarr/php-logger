@@ -46,6 +46,7 @@ class Logger extends AbstractLogger
         }
 
         $this->logPath = $path;
+        mkdir($this->logPath);
     }
 
     /**
