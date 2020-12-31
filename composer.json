@@ -1,0 +1,21 @@
+{
+    "name": "xraffsarr/php-logger",
+    "description": "A simple PHP logger",
+    "type": "library",
+    "require": {
+        "psr/log": "^1"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpLogger\\" : "Logger/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "0xRaffSarr",
+            "email": "contacts@raffaelesarracino.it"
+        }
+    ],
+    "minimum-stability": "dev"
+}
