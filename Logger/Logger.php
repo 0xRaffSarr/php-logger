@@ -29,7 +29,8 @@ class Logger extends AbstractLogger
     }
 
     /**
-     * Set the log path, if it exists check that it is a directory and can write in it
+     * Set the log path, if it exists check that it is a directory and can write in it.
+     * If it not exists, create a dir.
      *
      * @param string $path
      * @throws \Exception
@@ -44,9 +45,11 @@ class Logger extends AbstractLogger
                 throw new \Exception('Unable to write to directory');
             }
         }
+        else {
+            mkdir($this->logPath);
+        }
 
         $this->logPath = $path;
-        mkdir($this->logPath);
     }
 
     /**
