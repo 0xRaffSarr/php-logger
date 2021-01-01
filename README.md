@@ -26,7 +26,7 @@ You can make an instance and access to it, with static method `Logger::instance`
         private $logPath = ''; //folder for saving logs
         
         public function __construct() {
-            $this->logger = Logger::instance($logPath);
+            $this->logger = Logger::instance($this->logPath);
         }
         
         public function doSomething() {
