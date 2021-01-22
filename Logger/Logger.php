@@ -164,7 +164,9 @@ class Logger extends AbstractLogger
      * @return bool
      */
     private function writeLog(string $data) {
-        $file = $this->getPath().'/logger.log';
+
+        $file = $this->getPath().($this->getJson() ? '/logger.json' : '/logger.log');
+
         try {
 
             if($this->getAppendToFile()) {
