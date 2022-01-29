@@ -4,7 +4,7 @@
  * Author: Raffaele Sarracino - https://raffaelesarracino.it
  */
 
-namespace PhpLogger;
+namespace PhpLogger\Log;
 
 use DateTime;
 
