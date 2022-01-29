@@ -1,4 +1,12 @@
 <?php
+/**
+ * PHP Log abstract: Defines the abstract Log object
+ *
+ * @link  https://github.com/0xRaffSarr/php-logger
+ * @copyright Copyright (c) 2022. Raffaele Sarracino <contacts@raffaelesarracino.it>
+ * @license https://github.com/0xRaffSarr/php-logger/blob/main/LICENSE
+ * @package Log
+ */
 
 namespace PhpLogger\Log;
 

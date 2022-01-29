@@ -1,7 +1,11 @@
 <?php
 /**
- * Copyright (c) 2020.
- * Author: Raffaele Sarracino - https://raffaelesarracino.it
+ * PHP Log: Defines log object
+ *
+ * @link  https://github.com/0xRaffSarr/php-logger
+ * @copyright Copyright (c) 2022. Raffaele Sarracino <contacts@raffaelesarracino.it>
+ * @license https://github.com/0xRaffSarr/php-logger/blob/main/LICENSE
+ * @package Log
  */
 
 namespace PhpLogger\Log;
