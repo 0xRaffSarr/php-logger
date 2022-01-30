@@ -14,6 +14,10 @@ use DateTime;
 
 class Log extends AbstractLog
 {
+    public function __construct() {
+        $this->time = new DateTime();
+    }
+
     /**
      * Return an array with the log data
      *
@@ -48,14 +52,12 @@ class Log extends AbstractLog
      */
     public function toString(): string
     {
-        $str = $this->getFormattedTime().' '.$this->logLevel.' '.$this->message.' [';
+        $str = '[ '.$this->getFormattedTime().' - '.$this->logLevel.' ] '.$this->message.PHP_EOL;
 
-        foreach ($this->context as $val) {
-            $str .= ' '.$val;
+        if(!empty($this->context)) {
+            $str .= var_export($this->context, true);
         }
 
-        $str .= ' ]';
-
-        return $str;
+        return $str.PHP_EOL;
     }
 }
