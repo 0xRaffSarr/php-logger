@@ -76,6 +76,23 @@ abstract class AbstractLog implements LogInterface
     /**
      * @inheritDoc
      */
+    public function setLogLevel(string $level): LogInterface
+    {
+        $this->logLevel = $level;
+
+        return $this;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function getLogLevel(): string {
+        return $this->logLevel;
+    }
+
+    /**
+     * @inheritDoc
+     */
     public function setMessage(string $message): LogInterface
     {
         $this->message = $message;
