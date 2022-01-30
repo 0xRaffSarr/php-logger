@@ -2,9 +2,9 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use lib\Logger;
+use PhpLogger\Logger;
 
-$logger = new Logger('log/', \lib\LoggerType::JSON_WRITER);
+$logger = new Logger('log/', \PhpLogger\LoggerType::JSON_WRITER);
 
 $logger->append(false);
 

@@ -9,13 +9,13 @@
  */
 
 
-namespace lib;
+namespace PhpLogger;
 
-use lib\Log\Log;
-use lib\Reader\ReaderInterface;
-use lib\Writer\JsonWriter;
-use lib\Writer\WriterFactory;
-use lib\Writer\WriterInterface;
+use PhpLogger\Log\Log;
+use PhpLogger\Reader\ReaderInterface;
+use PhpLogger\Writer\JsonWriter;
+use PhpLogger\Writer\WriterFactory;
+use PhpLogger\Writer\WriterInterface;
 use Psr\Log\AbstractLogger;
 
 

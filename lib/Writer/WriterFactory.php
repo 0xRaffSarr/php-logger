@@ -9,10 +9,10 @@
  * @package Writer
  */
 
-namespace lib\Writer;
+namespace PhpLogger\Writer;
 
-use lib\Exception\WriterNotFoundException;
-use lib\LoggerType;
+use PhpLogger\Exception\WriterNotFoundException;
+use PhpLogger\LoggerType;
 
 abstract class WriterFactory
 {

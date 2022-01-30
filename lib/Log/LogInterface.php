@@ -8,7 +8,7 @@
  * @package Log
  */
 
-namespace lib\Log;
+namespace PhpLogger\Log;
 
 interface LogInterface extends \JsonSerializable
 {

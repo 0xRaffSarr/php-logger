@@ -9,7 +9,7 @@
  * @package Exception
  */
 
-namespace lib\Exception;
+namespace PhpLogger\Exception;
 
 
 class WriterNotFoundException extends \Exception

@@ -9,9 +9,9 @@
  * @package Writer
  */
 
-namespace lib\Writer;
+namespace PhpLogger\Writer;
 
-use lib\Log\LogInterface;
+use PhpLogger\Log\LogInterface;
 
 class TextWriter extends AbstractWriter
 {

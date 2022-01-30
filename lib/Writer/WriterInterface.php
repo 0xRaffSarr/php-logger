@@ -9,10 +9,10 @@
  * @package Writer
  */
 
-namespace lib\Writer;
+namespace PhpLogger\Writer;
 
-use lib\Log\Log;
-use lib\Log\LogInterface;
+use PhpLogger\Log\Log;
+use PhpLogger\Log\LogInterface;
 
 interface WriterInterface
 {
