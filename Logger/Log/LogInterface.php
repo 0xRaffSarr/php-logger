@@ -13,6 +13,17 @@ namespace PhpLogger\Log;
 interface LogInterface extends \JsonSerializable
 {
     /**
+     * @param string $level
+     * @return LogInterface
+     */
+    public function setLogLevel(string $level): LogInterface;
+
+    /**
+     * @return string
+     */
+    public function getLogLevel(): string;
+
+    /**
      * Set DateTime of Log and return log object
      *
      * @param \DateTime $time
