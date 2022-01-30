@@ -11,14 +11,16 @@
 
 namespace PhpLogger\Writer;
 
+use PhpLogger\Log\LogInterface;
+
 class TextWriter extends AbstractWriter
 {
     /**
      * @inheritDoc
      */
-    public function write(string $log): bool
+    public function write(LogInterface $log): bool
     {
-        $file = $this->getLogPath().'/log.log';
+        $file = $this->getLogPath().'/logs.log';
 
         if(!is_dir($this->getLogPath())) mkdir($this->getLogPath(), 0777, true);
 
@@ -26,12 +28,12 @@ class TextWriter extends AbstractWriter
 
             if($this->getAppend()) {
                 //append data at end of file
-                $written = file_put_contents($file, $log.PHP_EOL , FILE_APPEND | LOCK_EX);
+                $written = file_put_contents($file, $log->toString().PHP_EOL , FILE_APPEND | LOCK_EX);
             }
             else {
                 $oldData = (file_exists($file) ? file_get_contents($file) : '');
                 //append data to start of file
-                $written = file_put_contents($file, $log.PHP_EOL.$oldData, LOCK_EX);
+                $written = file_put_contents($file, $log->toString().PHP_EOL.$oldData, LOCK_EX);
             }
 
         }

@@ -11,13 +11,31 @@
 
 namespace PhpLogger\Writer;
 
+use PhpLogger\Log\Log;
+use PhpLogger\Log\LogInterface;
+
 interface WriterInterface
 {
     /**
      * Write log on file
      *
-     * @param string $log
+     * @param Log $log
      * @return bool
      */
-    public function write(string $log): bool;
+    public function write(LogInterface $log): bool;
+
+    /**
+     * Set if append at end of file
+     *
+     * @param bool $append
+     * @return mixed
+     */
+    public function setAppend(bool $append);
+
+    /**
+     * Get append status
+     *
+     * @return bool
+     */
+    public function getAppend(): bool;
 }
