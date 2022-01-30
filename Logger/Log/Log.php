@@ -26,7 +26,7 @@ class Log extends AbstractLog
     public function toArray(): array
     {
         return [
-            'date_time' => (new DateTime())->format($this->dateTimeFormat),
+            'date_time' => $this->getFormattedTime(),
             'level' => $this->logLevel,
             'message' => $this->message,
             'context' => $this->context
