@@ -10,7 +10,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpLogger\\" : "lib/"
+            "PhpLogger\\" : "src/"
         }
     },
     "license": "MIT",

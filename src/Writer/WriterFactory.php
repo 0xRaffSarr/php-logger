@@ -14,6 +14,9 @@ namespace PhpLogger\Writer;
 use PhpLogger\Exception\WriterNotFoundException;
 use PhpLogger\LoggerType;
 
+use PhpLogger\Writer\Concrete\JsonWriter;
+use PhpLogger\Writer\Concrete\TextWriter;
+
 abstract class WriterFactory
 {
     /**

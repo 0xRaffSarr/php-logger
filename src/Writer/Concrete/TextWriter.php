@@ -9,9 +9,10 @@
  * @package Writer
  */
 
-namespace PhpLogger\Writer;
+namespace PhpLogger\Writer\Concrete;
 
 use PhpLogger\Log\LogInterface;
+use PhpLogger\Writer\AbstractWriter;
 
 class TextWriter extends AbstractWriter
 {
