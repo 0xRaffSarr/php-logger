@@ -8,7 +8,7 @@
  * @package Writer
  */
 
-namespace PhpLogger\Writer;
+namespace lib\Writer;
 
 abstract class AbstractWriter implements WriterInterface
 {

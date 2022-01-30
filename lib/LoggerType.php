@@ -9,7 +9,7 @@
  * @package Writer
  */
 
-namespace PhpLogger;
+namespace lib;
 
 abstract class LoggerType
 {

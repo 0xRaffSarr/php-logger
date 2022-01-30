@@ -8,7 +8,7 @@
  * @package Log
  */
 
-namespace PhpLogger\Log;
+namespace lib\Log;
 
 use DateTime;
 

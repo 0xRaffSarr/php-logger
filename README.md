@@ -18,7 +18,7 @@ You can make an instance and access to it, with static method `Logger::instance`
 
 ```php
 <?php
-    use PhpLogger\Logger;
+    use lib\Logger;
 
     class Foo {
         private $logger;

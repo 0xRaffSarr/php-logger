@@ -2,11 +2,11 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use PhpLogger\Logger;
+use lib\Logger;
 
-$logger = new Logger('log/', 'text');
+$logger = new Logger('log/', \lib\LoggerType::JSON_WRITER);
 
-$logger->append(true);
+$logger->append(false);
 
 $logger->emergency('Test debug logger', [
     'user' => [

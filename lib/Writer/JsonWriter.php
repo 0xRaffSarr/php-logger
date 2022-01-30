@@ -9,9 +9,9 @@
  * @package Writer
  */
 
-namespace PhpLogger\Writer;
+namespace lib\Writer;
 
-use PhpLogger\Log\LogInterface;
+use lib\Log\LogInterface;
 
 class JsonWriter extends AbstractWriter
 {
