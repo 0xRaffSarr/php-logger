@@ -28,11 +28,6 @@ class Logger extends AbstractLogger
     protected WriterInterface $writer;
 
     /**
-     * @var ReaderInterface
-     */
-    protected ReaderInterface $reader;
-
-    /**
      * Path to save log
      *
      * @var string
@@ -53,11 +48,20 @@ class Logger extends AbstractLogger
         $this->writer = WriterFactory::getWriterInstance($type, $path);
     }
 
+    /**
+     * Set append method for write log
+     *
+     * @since 2.0.0
+     * @param bool $append
+     * @return void
+     */
     public function append(bool $append) {
         $this->writer->setAppend($append);
     }
 
     /**
+     *
+     * @since 1.0.0
      * @param $level
      * @param \Stringable|string $message
      * @param array $context
