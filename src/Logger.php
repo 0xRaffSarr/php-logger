@@ -41,7 +41,13 @@ class Logger extends AbstractLogger
      */
     protected string $logType = 'text';
 
-    public function __construct(string $path, string $type) {
+    /**
+     * @param string $path
+     * @param string $type
+     * @throws Exception\WriterNotFoundException
+     * @throws \ReflectionException
+     */
+    public function __construct(string $path, string $type = 'text') {
         $this->path = $path;
         $this->logType = $type;
 
