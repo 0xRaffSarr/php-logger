@@ -24,18 +24,30 @@ use PhpLogger\LoggerType;
 trait LoggerTrait
 {
     /**
+     * Logger instance
+     *
      * @var Logger|null
+     *
+     * @since 2.0.0
      */
     protected static ?Logger $logger = null;
 
+    /**
+     * Path to save log. Set it before use
+     *
+     * @var string|null
+     *
+     * @since 2.0.0
+     */
     protected static ?string $logPath = null;
 
     /**
      * Log type
      * Default text log type
      *
-     * @since 2.0.0
      * @var string|null
+     *
+     * @since 2.0.0
      */
     protected static ?string $logType = LoggerType::LOG_WRITER;
 
