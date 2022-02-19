@@ -2,13 +2,15 @@
 
 require __DIR__.'/../vendor/autoload.php';
 
-use PhpLogger\Logger;
+use PhpLogger\Facade\Log;
+use PhpLogger\LoggerType;
 
-$logger = new Logger('log/', \PhpLogger\LoggerType::JSON_WRITER);
+Log::setLogPath(__DIR__.'/log/');
+Log::setLogType(LoggerType::JSON_WRITER);
+Log::append(false);
 
-$logger->append(false);
 
-$logger->emergency('Test debug logger', [
+Log::emergency('Test debug logger Facade', [
     'user' => [
         'name' => 'Mario',
         'surname' => 'Rossi'
