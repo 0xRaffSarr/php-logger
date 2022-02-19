@@ -4,12 +4,13 @@
     "version": "1.0.1",
     "type": "library",
     "require": {
-        "psr/log": "^1",
-        "ext-json": "*"
+        "psr/log": "^2",
+        "ext-json": "*",
+        "php": ">=8.0"
     },
     "autoload": {
         "psr-4": {
-            "PhpLogger\\" : "Logger/"
+            "PhpLogger\\" : "src/"
         }
     },
     "license": "MIT",
@@ -17,7 +18,7 @@
         {
             "name": "Raffaele Sarracino",
             "email": "contacts@raffaelesarracinno.it",
-            "homepage": "http://raffaelesarracino.it",
+            "homepage": "https://raffaelesarracino.it",
             "role": "Developer"
         }
     ],
