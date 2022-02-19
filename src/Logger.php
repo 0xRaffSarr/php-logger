@@ -12,7 +12,6 @@
 namespace PhpLogger;
 
 use PhpLogger\Log\Log;
-use PhpLogger\Reader\ReaderInterface;
 use PhpLogger\Writer\WriterFactory;
 use PhpLogger\Writer\WriterInterface;
 use Psr\Log\AbstractLogger;
