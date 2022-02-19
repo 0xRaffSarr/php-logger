@@ -1,7 +1,7 @@
 {
     "name": "xraffsarr/php-logger",
     "description": "A simple PHP logger",
-    "version": "1.0.1",
+    "version": "2.0.0",
     "type": "library",
     "require": {
         "psr/log": "^2",
