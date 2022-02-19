@@ -117,4 +117,20 @@ trait LoggerTrait
     {
         self::$logType = $type;
     }
+
+    /**
+     * Set append method for write log
+     *
+     * @param bool $append
+     * @return void
+     * @throws PathNotFoundException
+     * @throws \PhpLogger\Exception\WriterNotFoundException
+     * @throws \ReflectionException
+     *
+     * @since 2.0.0
+     */
+    public static function append(bool $append)
+    {
+        self::getLogger()->append($append);
+    }
 }
