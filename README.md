@@ -1,5 +1,13 @@
 # PhpLogger
 
+![GitHub release](https://img.shields.io/github/v/release/0xRaffSarr/php-logger)
+[![GitHub license](https://img.shields.io/github/license/0xRaffSarr/php-logger)](https://github.com/0xRaffSarr/php-logger/blob/main/LICENSE)
+![GitHub top language](https://img.shields.io/github/languages/top/0xRaffSarr/php-logger)
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/xraffsarr/php-logger)
+[![GitHub issues](https://img.shields.io/github/issues/0xRaffSarr/php-logger)](https://github.com/0xRaffSarr/php-logger/issues)
+![Packagist Downloads](https://img.shields.io/packagist/dt/xraffsarr/php-logger)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/0xRaffSarr/php-logger)
+
 A php logger based on [`psr/log`](https://github.com/php-fig/log) interface.
 
 ## Installation
